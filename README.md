@@ -12,6 +12,20 @@ has, etc!
 [hubot]: http://hubot.github.com
 [generator-hubot]: https://github.com/github/generator-hubot
 
+## Table of Contents
+- Running redbot Locally
+- Configuration
+- Scripting
+- external-scripts
+- Advanced Usage
+- hubot-scripts
+- Persistence
+- Adapters
+- Deployment
+- Deploying to UNIX or Windows
+- Campfire Variables
+- Restart the bot
+
 ### Running redbot Locally
 
 You can test your hubot by running the following, however some plugins will not
@@ -121,7 +135,7 @@ repo.
 
 [hubot-scripts]: https://github.com/github/hubot-scripts
 
-##  Persistence
+###  Persistence
 
 If you are going to use the `hubot-redis-brain` package (strongly suggested),
 you will need to add the Redis to Go addon on Heroku which requires a verified
@@ -135,7 +149,7 @@ from `external-scripts.json` and you don't need to worry about redis at all.
 
 [redistogo]: https://redistogo.com/
 
-## Adapters
+### Adapters
 
 Adapters are the interface to the service you want your hubot to run on, such
 as Campfire or IRC. There are a number of third party adapters that the
@@ -155,7 +169,7 @@ Where `<adapter>` is the name of your adapter without the `hubot-` prefix.
 
 [hubot-adapters]: https://github.com/github/hubot/blob/master/docs/adapters.md
 
-## Deployment
+### Deployment
 
     % heroku create --stack cedar
     % git push heroku master
@@ -183,7 +197,7 @@ hubot onto Windows][deploy-windows] wiki pages.
 [deploy-unix]: https://github.com/github/hubot/blob/master/docs/deploying/unix.md
 [deploy-windows]: https://github.com/github/hubot/blob/master/docs/deploying/unix.md
 
-## Campfire Variables
+### Campfire Variables
 
 If you are using the Campfire adapter you will need to set some environment
 variables. If not, refer to your adapter documentation for how to configure it,
@@ -208,7 +222,7 @@ Add the subdomain hubot should connect to. If you web URL looks like
 
 [hubot-adapters]: https://github.com/github/hubot/blob/master/docs/adapters.md
 
-## Restart the bot
+### Restart the bot
 
 You may want to get comfortable with `heroku logs` and `heroku restart` if
 you're having issues.
